@@ -1,0 +1,48 @@
+#section1 {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(168, 213, 255);
+  text-align: right;
+}
+
+#section2 {
+  border: 2px solid rgb(168, 213, 255);
+  display: block;
+}
+
+#main {
+  background-color: rgb(255, 255, 255);
+}
+
+#dates {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+#clear {
+  clear: both;
+}
+
+img {
+  float: right;
+}
+
+body {
+  border: 5px solid rgb(255, 255, 255);
+  background-color: rgb(168, 213, 255);
+  background: url("images/background.gif");
+  margin: 0 10% 0 10%;
+  font-family: sans-serif;
+}
+
+.paragraph {
+  padding: 5px;
+  margin-top: 10px;
+  border: 5px solid rgb(168, 213, 255);
+  background-color: rgb(196, 226, 255);
+  overflow: auto;
+}
+
+#footer {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid yellow;
+}

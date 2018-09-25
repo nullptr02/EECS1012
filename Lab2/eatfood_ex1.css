@@ -1,0 +1,28 @@
+#section1 {
+  border: 2px solid red;
+}
+
+#section2 {
+  border: 2px solid orange;
+  display: block
+}
+
+#dates {
+  border: 4px solid purple;
+}
+
+body {
+  border: 2px solid green;
+}
+
+p {
+  border: 2px solid blue;
+}
+
+.paragraph {
+  border: 5px solid black;
+}
+
+#footer {
+  border: 2px solid yellow;
+}
