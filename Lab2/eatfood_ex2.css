@@ -26,11 +26,11 @@ body {
 .paragraph {
   padding: 5px;
   margin-top: 10px;
-  border: 5px solid black;
+  border: 5px solid blue;
   background-color: rgb(196, 226, 255);
 }
 
 #footer {
   background-color: rgb(255, 255, 255);
-  border: 2px solid yellow;
+  padding: 5px;
 }
