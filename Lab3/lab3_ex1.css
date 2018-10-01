@@ -1,0 +1,26 @@
+/* add your css code for lab3_ex1.css here */
+.form {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border: 2px solid black;
+  align-items: center;
+}
+
+.login {
+  text-align: right;
+}
+
+#logo, #form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#form {}
+
+input[type=text], input[type=email], input[type=password], input[type=button] {
+  width: 240px;
+  text-align: left;
+}
