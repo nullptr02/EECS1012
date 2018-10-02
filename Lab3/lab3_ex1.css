@@ -1,26 +1,55 @@
 /* add your css code for lab3_ex1.css here */
 .form {
-  margin: auto;
-  width: 50%;
+  width: 250px;
   padding: 10px;
-  border: 2px solid black;
-  align-items: center;
+  border: 1px solid black;
+  margin-top: 10px;
 }
 
-.login {
+.form {
+  margin: 2px;
+  text-align: left;
+}
+
+.form, img {
+  display: block;
+  margin: 0 auto;
+}
+
+#main {
+  border: 2px solid black;
+  margin: auto;
+  padding: 5px 5px 100px 5px;
+}
+
+.floatRight {
   text-align: right;
 }
 
-#logo, #form {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+button {
+  background: black;
+  color: white;
+  padding: 5px;
+  font-family: monospace;
+  border: none;
 }
 
-#form {}
-
-input[type=text], input[type=email], input[type=password], input[type=button] {
+input[type=text], input[type=email], input[type=password], input[type=submit] {
   width: 240px;
-  text-align: left;
+}
+
+input[type=button] {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  text-align: right;
+}
+
+input[type=submit] {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 10pt;
+  font-family: monospace;
 }

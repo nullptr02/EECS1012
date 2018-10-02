@@ -1,1 +1,102 @@
-/* add your CSS code for lab3_ex2.css here */
+#main {
+  border: 5px solid #999999;
+  margin: auto;
+  padding: 5px;
+  width: 400px;
+  background: #eeeeee;
+}
+
+body {
+  background-image: url("background.png");
+  overflow: hidden;
+}
+
+form {
+  text-align: center;
+}
+
+input[type="radio"] {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 4em;
+}
+
+input[type="month"], input[type="year"] {
+  width: 2em;
+}
+
+.creditCard {
+  text-align: center;
+}
+
+img {
+  border: 3px solid black;
+  display: block;
+  margin: 0 auto;
+}
+
+.white {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.red {
+  background-color: red;
+  border: 1px solid black;
+  color: white;
+}
+
+.blue {
+  background-color: blue;
+  border: 1px solid black;
+  color: white;
+}
+
+.green {
+  background-color: green;
+  border: 1px solid black;
+  color: white;
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 5px;
+  font-family: monospace;
+  border: none;
+}
+
+.floatRight {
+  float: right;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.bottom {
+  overflow: hidden;
+}
+
+input[type=reset] {
+  padding: 5px;
+  font-size: 10pt;
+  font-family: monospace;
+  background-color: #eeeeee;
+  border: 0.5px solid black;
+}
+
+input[type=text] {
+  font-family: monospace;
+}
+
+input[type=submit] {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 10pt;
+  font-family: monospace;
+}

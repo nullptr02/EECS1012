@@ -2,43 +2,59 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title> Mad Coders </title>
-  <meta charset="utf-8">
-  <link href="lab3_ex1.css" type="text/css" rel="stylesheet">
-</head>
+  <head>
+    <title>
+      Mad Coders
+    </title>
+    <meta charset="utf-8">
+    <link href="lab3_ex1.css" type="text/css" rel="stylesheet">
+  </head>
 
-<body>
-  <div id="main">
+  <body>
+    <div id="main">
+      <div class="floatRight">
+        <p>Already have an account?
+          <a href="https://moodle.info.yorku.ca" class="button" target="_blank">
+            <button>Log In</button>
+          </a>
+        </p>
+      </div>
 
+      <div class="form">
 
-    <form class="login">
-      <p id="account">Already have an account?
+        <p id="logo"><img src="logo.png" alt="Logo"></p>
 
-        <input type="button" value="Log in" onclick="window.location.href='moodle.yorku.ca'" /></p>
-    </form>
+        <form action="https://www.eecs.yorku.ca/~mbrown/EECS1012/testForm.php" method="get">
+          <p>
+            <label>
+              Name:
+            </label>
+            <br/>
+            <input type="text" name="name" value="Bob Robert"/>
+          </p>
+          <p>
+            <label>Email:</label>
+            <br/>
+            <input type="email" name="email" value="bob@aol.com">
+          </p>
+          <p>
+            <label>
+              Password:
+            </label>
+            <br/>
+            <input type="password" name="password"/><br/><br/>
+          </p>
+          <p>
+            <input type="checkbox" name="agreed" value="yes"/>
+            <label>I agree to the terms and conditions?</label>
+          </p>
+          <p>
+            <input type="submit" value="Create my account"/>
+          </p>
 
-
-    <div class="form">
-
-      <p id="logo"><img src="logo.png" alt="Logo"></p>
-
-
-      <form id="form">
-        Name:
-        <br />
-        <input type="text" name="name" value="Bob Robert" />
-        Email:
-        <br />
-        <input type="email" name="email" value="bob@aol.com">
-        <bold>Password:</bold>
-        <br />
-        <input type="password" name="password" />
-        <input type="checkbox" name="terms" value="I agree to the terms and conditions" />I agree to the terms and conditions?
-        <input type="button" value="Create my account" />
-      </form>
+        </form>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 
 </html>

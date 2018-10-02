@@ -5,68 +5,66 @@ body {
 #main {
   border: 5px solid black;
   padding: 5px;
-  width: 400px;  /* the width of the #main div is 400 pixels */
-  margin: auto;  /* by setting margin to auto - the div will appear in the middle of the browser */
+  width: 400px;
+  /* the width of the #main div is 400 pixels */
+  margin: auto;
+  /* by setting margin to auto - the div will appear in the middle of the browser */
 }
 
 /* class used on one of the text inputs */
-.textInput
-{
-    width: 100px; /* set the width of the input form */
-    background-color: rgb(70,70,70); /* set color to dark grey */
-    color: white; /* set foreground color (i.e. text color) to white */
+.textInput {
+  width: 100px;
+  /* set the width of the input form */
+  background-color: rgb(70, 70, 70);
+  /* set color to dark grey */
+  color: white;
+  /* set foreground color (i.e. text color) to white */
 }
 
 /* class used on one of the text inputs with maxlength set to 4 */
-.smallInput
-{
+.smallInput {
   font-family: monospace;
-  width: 4em;  /* set the width to 4x current font size */
+  width: 4em;
+  /* set the width to 4x current font size */
 }
 
-.buttonBox
-{
-  margin-left: 10%;  /* Notice this has 10% margin on left and right */
+.buttonBox {
+  margin-left: 10%;
+  /* Notice this has 10% margin on left and right */
   margin-right: 10%;
   border: 1px black solid;
   overflow: hidden;
   padding: 5px;
 }
 
-.floatLeft
-{
-    float: left;
+.floatLeft {
+  float: right;
 }
 
-.floatRight
-{
+.floatRight {
   float: right;
 }
 
 /* This is used in a span about the text near one of the
 radio buttons */
-.fancy
-{
-  background-color: rgb(200,200,200);
+.fancy {
+  background-color: rgb(200, 200, 200);
   padding: 5px;
   border-bottom-style: dashed;
 }
 
 /* selector for a UI form.  */
-input[type="reset"]
-{
+input[type="reset"] {
   padding: 5px;
   background-color: black;
   color: white;
   font-size: 8pt;
 }
 
-.alignRight
-{
+.alignRight {
   text-align: right;
 }
 
-.alignCenter
-{
-  text-align:center;
+.alignCenter {
+  text-align: center;
 }

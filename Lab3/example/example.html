@@ -1,88 +1,98 @@
 <!-- Lab 3 CSS - this HTML example should help you with Lab 3 Tasks 1 and 2 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title> Example </title>
-  <meta charset="utf-8">
-  <link href="example.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-  <h2 class="alignCenter"> Example to help with Lab 3 </h2>
-  <div id="main">
-    <!-- all Form Elements are within the <form></form> tags -->
-    <form action="https://www.eecs.yorku.ca/~mbrown/EECS1012/testForm.php" method="get">
-      <fieldset>
-        <legend>Lab 3 Example</legend>
-        <p> Text Input:
-            <!-- the name property is the name of the data that will sent to <thead>
-              web program.  so, whatever is typed into this input will be sent <aside class="">
-              textInput="whatever your typed in" -->
+  <head>
+    <title>
+      Example
+    </title>
+    <meta charset="utf-8">
+    <link href="example.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <h2 class="alignCenter">
+      Example to help with Lab 3
+    </h2>
+    <div id="main">
+      <!-- all Form Elements are within the <form></form> tags -->
+      <form action="https://www.eecs.yorku.ca/~mbrown/EECS1012/testForm.php" method="get">
+        <fieldset>
+          <legend>Lab 3 Example</legend>
+          <p>
+            Text Input:
+            <!-- the name property is the name of the data that will sent to <thead> web program. so, whatever is typed into this input will be sent <aside class=""> textInput="whatever your typed in" -->
             <input class="textInput" type="text" name="textInput">
-        </p>
-        <p> Email Input:
+          </p>
+          <p>
+            Email Input:
             <input type="email" name="emailInput">
-        <p>
-        <!-- this input will only allow 4 characters to be typed -->
-        <p> Fixed Size Input (4 max):
-            <input class="smallInput" type="text" name="fixedSize" maxlength="4">
-        </p>
-      </fieldset>
-      <!-- In the following, I want want two divs, one on the left and on the
-      right.  One will have checkboxes, the other radio buttons.  I'm placing
-      both divs inside another div with id=buttonBox.  I'm setting the overflow
-      of buttonBox to hidden so the two floating divs (Left and Right) won'<table>
-        float outside it.
-      </table>-->
+            <p>
+              <!-- this input will only allow 4 characters to be typed -->
+              <p>
+                Fixed Size Input (4 max):
+                <input class="smallInput" type="text" name="fixedSize" maxlength="4">
+              </p>
+            </fieldset>
+            <!-- In the following, I want want two divs, one on the left and on the right. One will have checkboxes, the other radio buttons. I'm placing both divs inside another div with id=buttonBox. I'm setting the overflow of buttonBox to hidden so the two
+            floating divs (Left and Right) won'<table> float outside it. </table>-->
 
-    <div class="buttonBox">
-      <div class="floatLeft">
-        <!-- each checkbox and text is a paragraph -->
-        <!-- each checkbox has its own name. value is what will be associated
-          with the name if it is clicked. So if checkbox 2 is clicked, then form
-          will send checkThree="discount" to the web program -->
-        <p>
-           <input type="checkbox" name="checkOne" value="yes"> Check 1
-        </p>
-        <p>
-          <input type="checkbox" name="checkTwo" value="agreed"> Check 2
-        </p>
-        <p>
-           <input type="checkbox" name="checkThree" value="discount"> Check 3
-        </p>
-      </div>
+            <div class="buttonBox">
+              <div class="floatLeft">
+                <!-- each checkbox and text is a paragraph -->
+                <!-- each checkbox has its own name. value is what will be associated with the name if it is clicked. So if checkbox 2 is clicked, then form will send checkThree="discount" to the web program -->
+                <p>
+                  <input type="checkbox" name="checkOne" value="yes">
+                  Check 1
+                </p>
+                <p>
+                  <input type="checkbox" name="checkTwo" value="agreed">
+                  Check 2
+                </p>
+                <p>
+                  <input type="checkbox" name="checkThree" value="discount">
+                  Check 3
+                </p>
+              </div>
 
-      <div class="floatRight">
-        <!-- This is an example with radio buttons and label -->
-        <!-- notice that all the input has the same "name" -->
-        <!-- if one radio button is clicked, the other will be unclicked -->
-        <!-- value is what is sent to the webserver -->
-        <!-- the label tag allows the word in the label to be clicked -->
-        <!-- to also modify the radio button -->
-        <p>
-          <label>
-           <input type="radio" name="radButton" value="Child"> Radio 1
-         </label>
-        </p>
-        <p>
-          <label>
-          <input type="radio" name="radButton" value="Adult"> Radio 2
-          </label>
-        </p>
-        <p>
-          <label>
-           <input type="radio" name="radButton" value="Senior"> <span class="fancy">Radio 3</span>
-           </label>
-        </p>
-      </div>
-    </div>
-    <!-- end with two buttons -->
-    <div class="buttonBox">
-      <!-- submit input will create a form that when clicked will send the form -->
-      <p> <input type="submit" value="Click When Done"> </p>
+              <div class="floatRight">
+                <!-- This is an example with radio buttons and label -->
+                <!-- notice that all the input has the same "name" -->
+                <!-- if one radio button is clicked, the other will be unclicked -->
+                <!-- value is what is sent to the webserver -->
+                <!-- the label tag allows the word in the label to be clicked -->
+                <!-- to also modify the radio button -->
+                <p>
+                  <label>
+                    <input type="radio" name="radButton" value="Child">
+                    Radio 1
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="radButton" value="Adult">
+                    Radio 2
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="radButton" value="Senior">
+                    <span class="fancy">Radio 3</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+            <!-- end with two buttons -->
+            <div class="buttonBox">
+              <!-- submit input will create a form that when clicked will send the form -->
+              <p>
+                <input type="submit" value="Click When Done">
+              </p>
 
-      <p class="alignRight"> Click to reset <input type="reset" value="Reset"> </p>
-    </div>
-    </form>
-  </div>
-</body>
-</html>
+              <p class="alignRight">
+                Click to reset
+                <input type="reset" value="Reset">
+              </p>
+            </div>
+          </form>
+        </div>
+      </body>
+    </html>
