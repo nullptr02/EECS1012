@@ -26,6 +26,15 @@
   text-align: right;
 }
 
+.button {
+  display: inline-block;
+  background-color: black;
+  padding: 3px;
+  color: white;
+  font-family: monospace;
+  text-decoration: none;
+}
+
 button {
   background: black;
   color: white;

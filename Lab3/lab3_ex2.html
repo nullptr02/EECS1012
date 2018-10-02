@@ -9,17 +9,19 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <div id="main">
-      <fieldset>
-        <legend>
-          Select Shirt
-        </legend>
-        <div id="inner-main"></div>
-        <p>
-          <img src="tshirt.png" height="250"/>
-        </p>
+    <form action="https://www.eecs.yorku.ca/~mbrown/EECS1012/buyShirt.php" method="get">
 
-        <form action="https://www.eecs.yorku.ca/~mbrown/EECS1012/testForm.php" method="get">
+      <div id="main">
+
+        <fieldset>
+          <legend>
+            Select Shirt
+          </legend>
+          <div id="inner-main"></div>
+          <p>
+            <img src="tshirt.png" height="250" alt="tshirt"/>
+          </p>
+
           <p>
             <label>
               <input type="checkbox" name="color" value="white"/>
@@ -52,22 +54,21 @@
               X-Large
             </option>
           </select>
-
         </fieldset>
         <fieldset>
           <legend>
             Payment
           </legend>
-          <p>
-            <input type="radio" name="cardType" value="vs"/>Visa
-            <input type="radio" name="cardType" value="mc"/>MasterCard
-            <input type="radio" name="cardType" value="ae"/>American Express
+          <p class="creditCards">
+            <input type="radio" name="cardType" value="vs"/>&nbsp;Visa&nbsp;&nbsp;
+            <input type="radio" name="cardType" value="mc"/>&nbsp;MasterCard&nbsp;&nbsp;
+            <input type="radio" name="cardType" value="ae"/>&nbsp;American Express
           </p>
 
           <hr/>
 
-          <p>
-            <label>Credit Card</label>
+          <p class="payment">
+            <label>Card Number</label>
             <input type="text" name="cc1" maxlength="4"/>
             <label>-</label>
             <input type="text" name="cc2" maxlength="4"/>
@@ -78,17 +79,17 @@
           </p>
 
           <hr/>
-          <p>
+          <p class="expiryDate">
             <label>Expiration: Month (MM)</label>
-            <input type="month" name="month">
+            <input type="text" name="month" class="month" maxlength="2">
             <label>Year (YY)</label>
-            <input type="year" name="year"/>
+            <input type="text" name="year" class="year" maxlength="2">
           </p>
 
         </fieldset>
 
         <div class="bottom">
-          <p class="floatleft">Place Order
+          <p class="floatLeft">Place Order
             <input type="submit" value="Submit"/>
           </p>
 
@@ -101,6 +102,5 @@
       </div>
     </form>
 
-  </div>
-</body>
+  </body>
 </html>

@@ -8,7 +8,30 @@
 
 body {
   background-image: url("background.png");
-  overflow: hidden;
+}
+
+legend {
+  text-align: left;
+}
+
+.creditCards {
+  text-align: left;
+}
+
+.month {
+  width: 2em !important;
+}
+
+.year {
+  width: 2em !important;
+}
+
+.expiryDate {
+  text-align: left;
+}
+
+.payment {
+  text-align: left;
 }
 
 form {
@@ -21,10 +44,7 @@ input[type="radio"] {
 
 input[type="text"] {
   width: 4em;
-}
-
-input[type="month"], input[type="year"] {
-  width: 2em;
+  text-align: right;
 }
 
 .creditCard {
