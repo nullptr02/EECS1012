@@ -1,0 +1,47 @@
+<!-- EECS1012 - Lab Test #2, Task 3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Task 3 </title>
+  <meta charset="utf-8">
+  <link href="task3.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <!-- Create a div around everything (see CSS) -->
+  <div id="myDiv">
+  <h1> Car Rental </h1>  <!-- header 1 -->
+  <!-- create a form with the appropriate action -->
+  <form action="https://www.eecs.yorku.ca/~mbrown/EECS1012/testForm.php" method="get">
+    <!-- create a fieldset and legend -->
+    <fieldset>
+    <legend> Passenger Info </legend>
+    <!-- input text field with name set to "Name" -->
+    <p> Name: <input type="text" name="Name"> </p>
+    <!-- input text field with name set to "DL" -->
+    <p> Driver License: <input type="text" name="DL"> </p>
+
+    <!-- Radio buttons using labels, the name is "FuelType".  The values
+      are "gas" and "electric". -->
+    <p> Car type:
+      <label> <input type="radio" name="FuelType" value="gas"> Gas </label>
+      <label> <input type="radio" name="FuelType" value="electric" checked> Hybrid </label>
+    </p>
+
+    <!-- checkbox with name "under25", value is set to "yes" -->
+    <p> Are you under 25?  <input type="checkbox" name="under25" value="yes"> </p>
+    <!-- pulldown list using <select> and <option>. The name property is associated
+      with the select element -->
+    <p> Car size:
+    <select name="carType">
+      <option> Sedan </option>
+      <option> SUV </option>
+      <option> Van </option>
+    </select>
+    </p>
+    <!-- Two buttons for submit and reset -->
+    <p> <input type="submit"> <input type="reset"> </p>
+    </fieldset>  <!-- end fieldset -->
+  </form> <!-- end form -->
+  </div>  <!-- end div -->
+</body>
+</html>

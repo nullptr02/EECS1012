@@ -1,0 +1,46 @@
+/* Task 2 - Practice lab Test Solution */
+/* Set all fonts to monospace */
+body {
+  font-family: monospace;
+}
+
+/* set the boder to 5px orange solid.  if you forget the word "solid" it will
+  not show up */
+/* set background color as specified in the document */
+#container {
+  border: 5px orange solid;
+  background-color: rgb(244, 235, 66);
+  width: 80%;
+  margin: auto;
+}
+
+/* this selector selects the header inside the container */
+#container h1 {
+  text-align: center;
+}
+
+/* float all images to the right. */
+img {
+  float: right;
+}
+
+/* hair class is for all entries.  set border, margin,background color.
+   set overflow: hidden to help it avoid the floating images */
+.hair {
+  border: 5px orange solid;
+  margin: 10px;
+  background-color: rgb(0, 200, 255);
+  overflow: hidden;
+}
+
+/* this aligns the h2 with the "hair" class */
+.hair h2 {
+  text-align: center;
+}
+
+/* this is for the span - change font-family, size, and color */
+.name {
+  font-family: sans-serif;
+  font-size: 1.25em;
+  color: yellow;
+}

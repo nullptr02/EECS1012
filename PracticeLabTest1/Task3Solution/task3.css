@@ -1,0 +1,9 @@
+
+#myDiv { font-family: sans-serif;
+         background-color: silver;
+         border: 2px solid black;
+         padding: 5px;
+         margin-left: 10%;
+         width: 40%;
+       }
+fieldset { }
