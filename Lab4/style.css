@@ -1,0 +1,19 @@
+#box {
+  border: 3px solid black;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  overflow: auto;
+  padding: 20px;
+}
+#mydata {
+  margin: 20px;
+  width: 80%;
+  margin: auto;
+  background: grey;
+  height: 60px;
+  font-family: monospace;
+  font-size: 2em;
+  text-align: center;
+  border: 1px black solid;
+}
