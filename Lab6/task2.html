@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>
+      Lab 6 - Task 2
+    </title>
+    <style>
+      span {
+        padding-left: 10px;
+        display: block;
+        float: left;
+        width: 20%;
+      }
+      button {
+        margin-left: 10px;
+      }
+      body {
+        width: 80%;
+        margin: auto;
+        font-family: sans-serif;
+        border: 1px solid black;
+      }
+    </style>
+    <meta charset="utf-8">
+    <script src="prototype.js"></script>
+    <script src="task2.js"></script>
+  </head>
+  <body>
+    <form id="myForm" action="http://www.eecs.yorku.ca/~mbrown/EECS1012/testForm.php" method="get">
+      <h1>
+        Task 2: Keyboard Events and Form Submit
+      </h1>
+      <p>
+        <span>Name:</span>
+        <input id="input1" value="Enter Name" name="Name"></p>
+      <p>
+        <span>Student Id:</span>
+        <input id="input2" value="Enter Student ID" name="StudentID"></p>
+      <p>
+        <span>Email:</span>
+        <input id="input3" value="Enter Email" name="Email"></p>
+      <p>
+        <button id="submitButton" type="button">
+          Submit
+        </button>
+        <input type="reset" value="Reset">
+      </p>
+      <p style="color:red" id="ErrorMessage">
+        &nbsp;
+      </p>
+    </form>
+  </body>
+</html>
