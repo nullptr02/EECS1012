@@ -1,0 +1,57 @@
+/* Michael S. Brown, EECS1012 - York University (CC)
+ FormsInput.css  */
+
+body {
+  font-family: sans-serif;
+}
+h2 { font-family: sans-serif;
+     margin: 1px;
+   text-align: center;}
+
+.CCinput {
+  width: 4em;
+  font-family: monospace;
+}
+
+.input { width: 20em; }
+
+.types {
+  font-family: monospace;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+p {
+  margin: 10px;
+}
+
+.box {
+  margin: auto;
+  width: 40%;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: rgb(220,220,220);
+}
+ .successful {
+   background-color: rgb(200, 255, 200);
+ }
+
+ .unsuccessful {
+   background-color: rgb(255, 200, 200);
+ }
+
+ .fieldName {
+   display: inline-block;
+   width: 20%;
+   padding-right: 10px;
+   font-family: sans-serif;
+ }
+
+ .message {
+   font-family: monospace;
+   color: blue;
+   margin-left: 1px;
+   width: 1em;
+   height: 1em;
+   display: inline-block;
+ }

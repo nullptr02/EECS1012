@@ -1,0 +1,69 @@
+<!--
+ Michael S. Brown, EECS1012 - York University (CC)
+ FormsInput.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<title> Form Example </title>
+<meta charset="utf-8">
+<link href="FormsInput.css" rel="stylesheet">
+<script src="prototype.js"></script>
+<script src="FormsInput.js"></script>
+</head>
+<body>
+<form>
+<div class="box">
+  <!-- First Name input -->
+  <h2> Payment Information </h2>
+  <p> <span class="fieldName">First Name: </span>
+  <input type="text" id="FirstName" name="FirstName" class="input">
+  <span class="message"></span></p>
+
+  <!-- Last Name input -->
+  <p> <span class="fieldName"> Last Name: </span>
+  <input id="LastName" type="text" name="LastName" class="input">
+  <span class="message"></span></p>
+
+  <hr>
+  <!-- Address -->
+  <p> <span class="fieldName"> Address: </span>
+  <input id="Address" ty="text" name="LastName" class="input">
+  <span class="message"></span></p>
+
+  <!-- City -->
+  <p> <span class="fieldName"> City: </span>
+  <input id="City" type="text" name="LastName" class="input">
+  <span class="message"></span></p>
+
+  <!-- Provincene -->
+  <p> <span class="fieldName"> Province </span>
+  <select id="provinceList">
+  </select>
+  <span class="message"></span></p>
+
+  <!-- Postal Code -->
+  <p> <span class="fieldName"> Postal Code </span>
+  <input id="PostalCode" type="text" name="LastName" class="input" style="width:6em;">
+  <span class="message"></span></p>
+
+<hr>
+  <!-- Card Type Input -->
+  <p class="types"> Enter Your Card Type: VISA, MASTERCARD, AMEX, DISCOVER </p>
+  <p> <span class="fieldName"> Card Type </span>
+  <input type="text" id="cardType" name="cardType" class="input">
+  <span class="message"></span></p>
+
+  <!-- Credit Card numbers Input -->
+  <p> <span class="fieldName">Card Number </span>
+  <input type="text" id="cc1" class="CCinput" maxlength="4"><span class="message"></span>
+  <input type="text" id="cc2" class="CCinput" maxlength="4"><span class="message"></span>
+  <input type="text" id="cc3" class="CCinput" maxlength="4"><span class="message"></span>
+  <input type="text" id="cc4" class="CCinput" maxlength="4"><span class="message"></span>
+  </p>
+  <hr>
+  <p style="text-align:center;">  <button  id="submit" type="button"> Submit </button> <button> Clear </button> </p>
+  <p style="text-align:center;" id="formError"> &nbsp; <p>
+</div>
+</form>
+</body>
+</html>

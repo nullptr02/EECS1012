@@ -1,0 +1,17 @@
+#card {
+  border: 1px black solid;
+  width: 250px;
+  height: 140px;
+  background-color: white;
+  color: blue;
+  padding: 5px;
+  position: absolute;
+}
+#cardarea {
+  width: 1000px;
+  height: 500px;
+  border: 3px solid black;
+  position: absolute;
+  background-color: silver;
+  position: relative;
+}

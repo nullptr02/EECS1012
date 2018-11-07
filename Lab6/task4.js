@@ -39,10 +39,10 @@ function createBoxes() {
 }
 
 function deleteBoxes(event) {
-  if ($('container').childNodes.length == 3) {
+  if ($('container').childNodes.length == 1) {
     alert('Last one');
     $('container').removeChild(this);
-    $('container').stopObserving();
+    //$('container').stopObserving();
   } else {
     $('container').removeChild(this);
   }

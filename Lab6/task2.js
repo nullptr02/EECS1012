@@ -4,7 +4,14 @@ window.onload = function() {
   $('input1').observe('keydown', deleteDefault);
   $('input2').observe('keydown', deleteDefault);
   $('input3').observe('keydown', deleteDefault);
+  $('resetButton').onclick = reset;
 };
+
+function reset() {
+  $('input1').observe('keydown', deleteDefault);
+  $('input2').observe('keydown', deleteDefault);
+  $('input3').observe('keydown', deleteDefault);
+}
 
 function deleteDefault() {
   this.stopObserving();
@@ -19,10 +26,12 @@ function submitForm() {
 
   if (x == '' || y == '' || z == '') {
     $('ErrorMessage').innerHTML = 'One of your fields has an error';
-    setTimeout(function() {
-      $('ErrorMessage').innerHTML = '';
-    }, 2000);
+    setTimeout($('ErrorMessage').errMsg(), 2000);
   } else {
     $('myForm').submit();
   }
+}
+
+function errMsg() {
+  $('ErrorMessage').innerHTML = '';
 }
