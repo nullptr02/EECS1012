@@ -1,0 +1,57 @@
+<!-- Lab 7 - Task2 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>
+      Form Example
+    </title>
+    <meta charset="utf-8">
+    <link href="task2.css" rel="stylesheet">
+    <script src="prototype.js"></script>
+    <script src="task2.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <form id="myForm" action="http://www.eecs.yorku.ca/~mbrown/EECS1012/testForm.php" method="get">
+
+        <!-- user id -->
+        <h2>
+          Task 2
+        </h2>
+        <p>
+          <span class="fieldName">UserID:
+          </span>
+          <input type="text" id="userid" name="userid" class="input">
+          <span class="message"></span></p>
+
+        <!-- -->
+        <p style="text-align:center" class="types">
+          Enter Class Code: EECS, ESSE, MATH, HIST, CHEM, BIO
+        </p>
+        <p>
+          <span class="fieldName">
+            Course Code:
+          </span>
+          <input type="text" id="code" name="code" class="input">
+          <span class="message"></span></p>
+
+        <!-- Number -->
+        <p>
+          <span class="fieldName">
+            Course Num (XXXX):
+          </span>
+          <input style="width: 4em;" id="number" type="text" name="number" class="input">
+          <span class="message"></span></p>
+        <hr>
+        <p style="text-align:center;">
+          <button id="submitButton" type="button">
+            Submit
+          </button>
+          <input id="clear" type="reset" value="Clear">
+        </p>
+        <p style="text-align:center;" id="formError">
+          &nbsp;
+          <p></form>
+        </div>
+      </body>
+    </html>
