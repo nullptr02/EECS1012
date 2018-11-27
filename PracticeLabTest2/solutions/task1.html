@@ -1,0 +1,35 @@
+<!-- In-Class Lab Test #2 - Task1 -->
+<!doctype html>
+<html lang="en">
+<head>
+<title> Task 1</title>
+<meta charset="utf-8">
+<link href="task1.css" rel="stylesheet">
+<script src="prototype.js"></script>
+<script src="task1.js"></script>
+</head>
+<body>
+<h2 style="text-align: left"> Task 1 - [Write your name here] </h2>
+<div class="box">
+<form id="myForm" action="http://www.eecs.yorku.ca/~mbrown/EECS1012/testForm.php" method="get">
+  <h2> Sunlife Dental Insurance Claim </h2>
+  <p style="text-align:center" class="types"> Enter Card ID: Format A (adult) or C (child), 4 numbers, Letter </p>
+  <p> <span class="fieldName"> Sunlife Health Card ID: </span>
+  <input type="text" id="cardId" name="cardId" class="input">
+  </p>
+
+  <p style="text-align:center" class="types"> Enter Country Code: CAN, MEX, USA, EUR, OTHER  </p>
+  <p> <span class="fieldName"> Country Code: </span>
+  <input type="text" id="countryCode" name="code" class="input">
+  <span class="message"></span></p>
+
+  <!-- Number -->
+  <p> <span class="fieldName"> Claim amounts: </span>
+  <input style="width: 4em;" id="amount" type="text" name="number" class="input">
+  <span class="message"></span></p>
+  <hr>
+  <p style="text-align:center;">  <button  id="submitButton" type="button"> Submit </button> </p>
+</form>
+</div>
+</body>
+</html>
